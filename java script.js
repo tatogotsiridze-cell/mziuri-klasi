@@ -12,4 +12,4 @@ if (user == username[0] && pass == password[0]) {
   console.log("welcome daviti");
 } else {
   console.log   ("invalid username or password");
-}
+}  
