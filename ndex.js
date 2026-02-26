@@ -1,14 +1,14 @@
+ const paragraphs = document.querySelectorAll("p");
 
-let students = [
-  {name: "nika",score:80},
-  {name: "luka",score:55},
-  {name: "ana",score:92},
-  
-];
- 
-for (let i = 0; i < students.length; i++) 
-  if (students[i].score >= 60) {
-    console.log(students[i].name + " passed ");
-  } else {
-    console.log(students[i].name + " failed ");
-  };
+for (let i = 0; i<paragraphs.length; i++){
+    paragraphs[i].innerHTML = " hai";
+    paragraphs[i].style.backgroundColor = "yellow";
+    paragraphs[i].style.border = "1px solid black";
+    paragraphs[i].style.color = "black";
+    paragraphs[i].style.margin = "20px";
+}
+
+
+
+
+
