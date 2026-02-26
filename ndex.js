@@ -1,14 +1,11 @@
- const paragraphs = document.querySelectorAll("p");
-
-for (let i = 0; i<paragraphs.length; i++){
-    paragraphs[i].innerHTML = " hai";
-    paragraphs[i].style.backgroundColor = "yellow";
-    paragraphs[i].style.border = "1px solid black";
-    paragraphs[i].style.color = "black";
-    paragraphs[i].style.margin = "20px";
+function execute(event) {
+  event.preventDefault();
+  const form = document.querySelector("form").elements;
+   fetch(form.username.value,form.password.value,form.age.value,form.mail.value,form.male.value,form.female.value,);
+  
 }
-
-
-
-
-
+function sendData(username, password, age, mail, mail,female) {
+  console.log(
+    username + " " + password + " " + age + " " + mail + " " + female
+  );
+}
