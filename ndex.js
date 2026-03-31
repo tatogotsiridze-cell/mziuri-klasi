@@ -1,12 +1,11 @@
-function execute(event) {
-  event.preventDefault();
-  const form = document.querySelector("form").elements;
-   sendData(form.username.value,form.password.value,form.age.value,form.mail.value,form.male.value,form.female.value);
+
+
+document.body.innerHTML = "<button>Add to cart</button>";
+
+let button = document.querySelector("button");
+
+button.onclick = function() {
   
-}
-function sendData(username, password, age, mail, male, female) {
-  console.log(
-    username + " " + password + " " + age + " " + mail + " " + male + " " + female
-  );
-}
+  console.log("Adding to cart  " );
+};
   
